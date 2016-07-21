@@ -1,18 +1,18 @@
->	Install Postgresql  and Pgadmin III  tool for administration and working creating tables 
+1	Install Postgresql  and Pgadmin III  tool for administration and working creating tables 
 
->	Download the psycopg python driver for Postgresql  ( 64 bit version)  
+2	Download the psycopg python driver for Postgresql  ( 64 bit version)  
  http://www.stickpeople.com/projects/python/win-psycopg/ 
 
->	Extracted from file in step 2 and copied to  Lib  within C:\Anaconda3  and the egg file into site packages 
+3	Extracted from file in step 2 and copied to  Lib  within C:\Anaconda3  and the egg file into site packages 
 
->	Refer to postgresql  - SQLalchemy page for  making a database and syntax for creating connection and added to Python
+4	Refer to postgresql  - SQLalchemy page for  making a database and syntax for creating connection and added to Python
 conn = create_engine('postgresql://sdey:code@localhost:9531/projects') 
 
->	Created database and table on Postgresql 
+5	Created database and table on Postgresql 
 
->	Loaded data file from CSV with copy command in PSQL, had to change the permissions of all the data folders - ‘added “Everyone” in the edit permissions’  for postgres user on Windows file.
+6	Loaded data file from CSV with copy command in PSQL, had to change the permissions of all the data folders - ‘added “Everyone” in the edit permissions’  for postgres user on Windows file.
 
->	Added new user in Pgadmin console (with password) and gave rights to user for table read
+7	Added new user in Pgadmin console (with password) and gave rights to user for table read
 
->	Use the result from  connection query directly as an iterator - http://stackoverflow.com/questions/1192269/sqlalchemy-operating-on-results 
+8	Use the result from  connection query directly as an iterator - http://stackoverflow.com/questions/1192269/sqlalchemy-operating-on-results 
 
