@@ -10,7 +10,8 @@ conn = create_engine('postgresql://sdey:code@localhost:9531/projects')
 
 5	Created database and table on Postgresql 
 
-6	Loaded data file from CSV with copy command in PSQL, had to change the permissions of all the data folders - ‘added “Everyone” in the edit permissions’  for postgres user on Windows file.
+6	Load data file from CSV with copy command in PSQL, had to change the permissions of all the data folders - 
+‘add “Everyone” in the edit permissions’  for postgres user on Windows file.
 
 7	Added new user in Pgadmin console (with password) and gave rights to user for table read
 
