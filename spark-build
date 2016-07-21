@@ -1,0 +1,13 @@
+1. Download Python 2.7 and Spark to /home/training/src and extracted tarballs to home/training/local  (tar xvgf filename) 
+2. Install Python using README from  /home/training/local/Python27/  using "make altinstall"
+3. Install Maven using steps from this link (http://johnathanmarksmith.com/linux/linux%20mint/mint/java/maven/programming/project%20management/2014/11/17/how-to-install-maven-323-on-linux-mint/)  
+4. Refer READ.ME from untarred Spark folder to build Spark using Maven 
+5. Compile errors started -  Scala build failed   
+6. Found out old jdk 1.6.0.31 issue ,upgraded to 1.8.0.25 
+7. Spark Build completed  - 38 mins 
+8. Switch to path - /home/local/spark-1.2.0 or sudo su then ' cd /home/training/local/spark-1.2.0 '
+9. Change spark-env.sh file to add PYSPARK_PYTHON=/home/training/local/Python-2.7.8/python to ensure Spark uses Python 2.7.8 
+10. Ran few test examples -  ./bin/pyspark , and sc.parallelize(range(1000)).count()  - succesfully ran . http://10.0.0.5:4040 Check for UI 
+11. Use MASTER=local[1] ./bin/run-example SparkPi or MASTER=local[2] ./bin/run-example SparkPi 
+                     ^ - No of local machine threads
+12. Use Read me for cluster based runs where Master = ipaddress:/port
